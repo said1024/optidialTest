@@ -13,12 +13,6 @@ pipeline {
                 sh "mvn clean package"
             }
         }
- stage('Test') {
-            steps {
-                echo "unit tests"
-                sh "mvn test"
-            }
-        }
 
     }
 }
